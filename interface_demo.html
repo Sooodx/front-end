@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/interface.css" />
+
+</head>
+
+<body>
+
+	<select>
+		<option>选择算法1</option>
+		<option>选择算法2</option>
+		<option>选择算法3</option>
+	</select>
+	<select>
+		<option>选择权重文件1</option>
+		<option>选择权重文件2</option>
+		<option>选择权重文件3</option>
+	</select>
+
+	<div class="content">
+		<div class="tag_container">
+			<div>
+				<div class="tag active" onclick="openTag(event,'tag1')">图片检测</div>
+				<div class="tag" onclick="openTag(event,'tag2')">视频检测</div>
+			</div>
+			<div id="tag1" class="tag-content" style="display:block;">
+				<div class="detect-content">
+					<div class="detect-file"></div>
+					<div class="detect-file"></div>
+				</div>
+				<form method="POST">
+					<input type="file">
+					<input type="button" value="開始檢測">
+				</form>
+			</div>
+			<div id="tag2" class="tag-content">
+				<h3>无</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<p class="tittle">
+			检测结果
+		</p>
+		<table cellspacing="2" border="1">
+			<tr>
+				<th>目标类别</th>
+				<th>目标大小</th>
+				<th>置信度</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr aria-rowcount="10">
+				<td class="td2" colspan="3"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script>
+	function openTag(event, tagName) {
+		var tagContent = document.getElementsByClassName("tag-content");
+		for (var i = 0; i < tagContent.length; i++) {
+			tagContent[i].style.display = "none";
+		}
+
+		var tags = document.getElementsByClassName("tag");
+		for (var i = 0; i < tags.length; i++) {
+			tags[i].className = tags[i].className.replace(" active", "");
+		}
+
+		document.getElementById(tagName).style.display = "block";
+		event.currentTarget.className += " active";
+	}
+</script>
+
+</html>

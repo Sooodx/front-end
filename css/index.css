@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.content-left {
+    position: fixed;
+    width: 14%;
+    height: 100%;
+    background-color: #30426a;
+    float: left;
+}
+
+.content-left a {
+    text-decoration: none;
+}
+
+.content-right {
+    position: relative;
+    height: 100%;
+    width: 86%;
+    float: right;
+    background-color: #f6f6f6;
+}
+
+.view {
+    height: 100%;
+    width: 100%;
+}
+
+.left-tittle>a {
+    background-color: #2d3e63;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #b2bfdc;
+    font-size: 20px;
+}
+
+.seg {
+    height: 1px;
+    width: 100%;
+
+}
+
+.nav {
+    margin-top: 5px;
+}
+
+.first-nav {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.settings-tittle {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.nav-menu a {
+    display: block;
+    color: #b2bfdc;
+}
+
+#hide-content {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.setting-nav {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.right-tittle {
+    font-size: 19px;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    color: #333;
+    padding: 15px 0 0 15px;
+}
+

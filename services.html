@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/http_code.jquery.com_jquery-3.6.2.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
+    <title>Index</title>
+    
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-left">
+            <div class="left-tittle">
+                <a href="#">Portainer</a>
+            </div>
+            <div class="nav">
+                <div class="nav-menu">
+                    <div class="first-nav">
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="services.html">Services</a>
+                        <a href="files.html">Files</a>
+                    </div>
+                    <div id="hide-content"></div>
+                    <div id="hide-content"></div>
+                    <div class="settings-tittle">SETTINGS</div>
+                    <div class="setting-nav">
+                        <a href="settings.html">Settings</a>
+                        <a href="#">User</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="view">
+                <div class="right-tittle">Service list</div>
+                <div class="right-table">
+                    <div class="table-tittle">Services</div>
+                    <div class="actions">
+                        <button id="button-1">Start</button>
+                        <button id="button-2">Stop</button>
+                        <button id="button-3">Restart</button>
+                        <button id="button-4">Pause</button>
+                        <button id="button-5">Resume</button>
+                        <button id="button-6">Remove</button>
+                        <button id="button-7">Add Service</button>
+                    </div>
+                    <div class="search-bar">
+                        <label>搜索</label><input type="text" class="search-text" placeholder="Search...">
+                    </div>
+                    <div class="table-content">
+                        <table class="table-service">
+                            <tr>
+                                <th>Name</th>
+                                <th>State</th>
+                                <th>File</th>
+                                <th>Created</th>
+                                <th>Ownership</th>
+                            </tr>
+                            <tr>
+                                <td><a href="interface_demo.html">detect</a></td>
+                                <td><span class="state-running">running</span></td>
+                                <td>var/mnt/</td>
+                                <td>9-16</td>
+                                <td>administrators</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

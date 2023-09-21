@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/http_code.jquery.com_jquery-3.6.2.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/files.css">
+    <title>Index</title>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-left">
+            <div class="left-tittle">
+                <a href="#">Portainer</a>
+            </div>
+            <div class="nav">
+                <div class="nav-menu">
+                    <div class="first-nav">
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="services.html">Services</a>
+                        <a href="files.html">Files</a>
+                    </div>
+                    <div id="hide-content"></div>
+                    <div id="hide-content"></div>
+                    <div class="settings-tittle">SETTINGS</div>
+                    <div class="setting-nav">
+                        <a href="settings.html">Settings</a>
+                        <a href="#">User</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="view">
+                <div class="right-tittle">Files list</div>
+                <div class="right-table">
+                    <div class="table-tittle">上传包</div>
+                    <div class="pull-form">
+                        <form action="#" method="post">
+                            <div class="form-row"><label>路径</label><input type="text">
+                                <input type="file" multiple webkitdirectory>
+                            </div>
+                            <div><input type="submit" id="submit" value="上传"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-table">
+                    <div class="table-tittle">管理包</div>
+                    <div class="table-files">
+                        <div class="table-content">
+                            <table class="table-files">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Path</th>
+                                    <th>Size</th>
+                                    <th>Created</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="interface_demo.html">detect</a></td>
+                                    <td><span class="state-running">running</span></td>
+                                    <td>var/mnt/</td>
+                                    <td>9-16</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
